@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #chat-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        #messages {
+            list-style-type: none;
+            padding: 0;
+        }
+        #messages li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <h1>Simple Chatbot</h1>
+        <ul id="messages"></ul>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById("user-input").value;
+            displayMessage("User: " + userInput);
+
+            // Simple logic to generate a response
+            var response = generateResponse(userInput);
+            displayMessage("Chatbot: " + response);
+
+            // Clear the input field
+            document.getElementById("user-input").value = "";
+        }
+
+        function displayMessage(message) {
+            var messagesContainer = document.getElementById("messages");
+            var listItem = document.createElement("li");
+            listItem.textContent = message;
+            messagesContainer.appendChild(listItem);
+        }
+
+        function generateResponse(userInput) {
+            // Simple logic for generating responses
+            if (userInput.toLowerCase().includes("hello")) {
+                return "Hi there!";
+            } else if (userInput.toLowerCase().includes("how are you")) {
+                return "I'm just a simple chatbot.";
+            } else {
+                return "I'm not sure how to respond to that.";
+            }
+        }
+    </script>
+</body>
+</html>

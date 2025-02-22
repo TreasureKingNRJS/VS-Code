@@ -1,0 +1,17 @@
+a:link{
+    text-decoration: none;
+}
+h1{
+    text-align :center;
+    border : 15px solid aquamarine;
+    font-size: 50mm;
+}
+h2{
+    text-align: center;
+    font-size: 30mm;
+}
+a:hover{
+    color: aquamarine;
+    background-color: blue;
+    border: 5px solid greenyellow;
+}

@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(255, 188, 3);
+}
+h1{
+    border: 20px solid rgb(140, 0, 255);
+    color: ivory;
+    background-color: black;
+    font-weight: bolder;
+    font-size: 75mm;
+    text-align: center;
+}
+th,td{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    font-size: 20mm;
+    border: 5px solid crimson;
+}
+table{
+    border: 15px solid rgb(180, 39, 23);
+    background-color: aquamarine;
+}
+caption{
+    font-weight: bolder;
+    font-size: 50mm;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: 10px solid aquamarine;
+}
+th{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 10px solid rgb(98, 159, 0);
+}

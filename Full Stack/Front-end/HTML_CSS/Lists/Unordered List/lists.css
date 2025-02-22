@@ -1,0 +1,12 @@
+ul{
+    list-style-type: none;
+}
+body{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: url("https://r1.ilikewallpaper.net/iphone-x-wallpapers/download-17613/Dark-patterned-background.jpg");
+}
+h1{
+    background-color: aqua;
+}

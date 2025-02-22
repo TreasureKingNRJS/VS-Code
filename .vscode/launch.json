@@ -1,0 +1,168 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Java.Abstraction.Test",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "calc",
+            "request": "launch",
+            "mainClass": "Java.Calculator.calc",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "check",
+            "request": "launch",
+            "mainClass": "Java.CheckSomething.check",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "Object",
+            "request": "launch",
+            "mainClass": "Java.Class.Object",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "Program",
+            "request": "launch",
+            "mainClass": "Java.Constructor.Program",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "Arguement",
+            "request": "launch",
+            "mainClass": "Java.ConstructorAndArguement.Arguement",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "Funct",
+            "request": "launch",
+            "mainClass": "Java.Function.Funct",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "calcu",
+            "request": "launch",
+            "mainClass": "Java.GPT.Calc.calcu",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "Java.HelloWorld.HelloWorld",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "NegPos",
+            "request": "launch",
+            "mainClass": "Java.If.NegPos",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "C",
+            "request": "launch",
+            "mainClass": "Java.Inheritance.Construct.C",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "Object(1)",
+            "request": "launch",
+            "mainClass": "Java.Inheritance.Inherit.Object",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "IMP",
+            "request": "launch",
+            "mainClass": "Java.Interface.IMP",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "pack",
+            "request": "launch",
+            "mainClass": "Java.PackagesImport.pack",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "Overloading",
+            "request": "launch",
+            "mainClass": "Java.Polymorphism.Overloading.Overloading",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "MAIN",
+            "request": "launch",
+            "mainClass": "Java.Polymorphism.Overriding.MAIN",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "Super",
+            "request": "launch",
+            "mainClass": "Java.Polymorphism.Overriding.Super",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "Static",
+            "request": "launch",
+            "mainClass": "Java.Static.Static",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "Java.Sum.Sum",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "runn",
+            "request": "launch",
+            "mainClass": "Java.Thread.Extends.runn",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "mAIn",
+            "request": "launch",
+            "mainClass": "Java.Thread.Implements.mAIn",
+            "projectName": "VS Code_ab18d903"
+        },
+        {
+            "type": "java",
+            "name": "Third",
+            "request": "launch",
+            "mainClass": "Java.ThreeClass.Third",
+            "projectName": "VS Code_ab18d903"
+        }
+    ]
+}

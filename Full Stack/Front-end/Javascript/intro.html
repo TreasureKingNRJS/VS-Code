@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        #dv{
+            width: 50%;
+            height: 400px;
+            border: solid 10px;
+            border-radius: 10px;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="show()">Button</button>
+    <input type="text" id="i">
+    <button onclick="print()">Click</button>
+    <h1 id="h"> </h1>
+    <!--It worked when I put space between them(h1)-->
+    <button onclick="al()">Alert</button>
+    <br>
+    <div id = "dv">
+        <button onclick="color('red')">RED</button>
+        <button onclick="color('yellow')">YELLOW</button>
+        <button onclick="color('green')">GREEN</button>
+        <button onclick="color('blue')">BLUE</button>
+    </div>
+    <script>
+        function  show(){
+            console.log("Button Clicked")
+            dis()
+            var  a=1
+            var b=2
+            var sum=a+b
+            console.log("Sum = " + sum)
+            var c = 4
+            var c = 3
+            console.log(c)
+            let d = 7
+            console.log(d)
+            const e = 11
+
+            if(e%2 == 0){
+                console.log("Number is even")
+            }else{
+                console.log("Number is odd")
+            }
+            var ar = ["o","r", "s",21]
+            console.log(ar)
+
+            var person=[{
+                Name:"Nithin",
+                Age:100,
+                Place:"Trivandrum"
+            },{Name:"Treasure King",
+              Age:15,
+              Place:"Delhi"}]
+            console.log(person)
+            console.log("Name : " +person[0].Name)
+            }
+            function dis(){
+                console.log("Bye Bye")
+            }
+            function print(){
+                var text = document.getElementById("i").value
+                document.getElementById("h").innerHTML = text
+            }
+            function al(){
+                var text = document.getElementById("i").value
+                if(text=="Nithin"){
+                    alert("You are a legend.....")
+                }else{
+                    alert(text)    
+                }
+                
+            }
+            function color(col){
+                document.getElementById("dv").style.background = col
+            }
+
+    </script>
+</body>
+</html>

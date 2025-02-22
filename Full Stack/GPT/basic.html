@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Legends</title>
+    <style>
+        /* Styles remain the same as in the previous example */
+
+        section {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        section.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Bulging effect */
+        .bulge {
+            animation: bulge 0.5s ease-out;
+        }
+
+        @keyframes bulge {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Football Legends</h1>
+    </header>
+
+    <nav>
+        <a href="#ronaldo">Cristiano Ronaldo</a>
+        <a href="#messi">Lionel Messi</a>
+        <a href="#zidane">Zinedine Zidane</a>
+        <a href="#pele">Pelé</a>
+        <a href="#maradona">Diego Maradona</a>
+        <a href="#ronaldinho">Ronaldinho</a>
+        <a href="#henry">Thierry Henry</a>
+        <a href="#maldini">Paolo Maldini</a>
+        <a href="#beckham">David Beckham</a>
+        <a href="#xavi">Xavi Hernandez</a>
+        <a href="#neymar">Neymar</a>
+        <a href="#bale">Gareth Bale</a>
+        <!-- Add more player links as needed -->
+    </nav>
+
+    <main>
+        <section id="ronaldo" class="animated bulge">
+            <h2>Cristiano Ronaldo</h2>
+            <img src="ronaldo.jpg" alt="Cristiano Ronaldo">
+            <p>
+                Cristiano Ronaldo is a professional footballer widely considered one of the greatest of all time.
+                Born on February 5, 1985, in Funchal, Madeira, Portugal, Ronaldo has had a remarkable career,
+                playing for top clubs such as Sporting Lisbon, Manchester United, Real Madrid, and Juventus.
+            </p>
+            <p>
+                Known for his goal-scoring prowess, athleticism, and versatility, Ronaldo has won numerous awards,
+                including five Ballon d'Or titles. Off the field, he is also recognized for his philanthropy work
+                and dedication to fitness and professionalism.
+            </p>
+        </section>
+
+        <section id="messi" class="animated bulge">
+            <h2>Lionel Messi</h2>
+            <img src="messi.jpg" alt="Lionel Messi">
+            <p>
+                Lionel Messi, born on June 24, 1987, in Rosario, Argentina, is another football legend.
+                Messi spent his entire professional career with Barcelona before joining Paris Saint-Germain (PSG).
+            </p>
+            <p>
+                Messi is known for his incredible dribbling skills, precise finishing, and vision on the field.
+                He has won multiple Ballon d'Or awards and holds numerous records for goal-scoring feats.
+            </p>
+        </section>
+
+        <section id="zidane" class="animated bulge">
+            <h2>Zinedine Zidane</h2>
+            <img src="zidane.jpg" alt="Zinedine Zidane">
+            <p>
+                Zinedine Zidane, born on June 23, 1972, in Marseille, France, is a retired footballer and one of
+                the greatest midfielders in the history of the sport.
+            </p>
+            <p>
+                Zidane's elegance on the ball, playmaking abilities, and leadership qualities made him stand out.
+                He played for clubs like Juventus and Real Madrid, winning numerous domestic and international honors.
+            </p>
+        </section>
+
+        <!-- Add sections for additional players with their details and bulging animation -->
+
+    </main>
+
+    <footer>
+        &copy; 2024 Football Legends. All rights reserved.
+    </footer>
+
+    <script>
+        // Scroll animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active", "bulge");
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

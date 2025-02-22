@@ -1,0 +1,19 @@
+.white{
+    color : rgb(0, 0, 0);
+}
+div{
+    background-color: rgb(100, 123, 115);
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-top: 30px;
+    border: 10px solid;
+    border-color: black;
+}
+.in{
+    margin: 30px;
+    background-color: rebeccapurple;
+    border: 10px;
+    width : 300px;
+    height: 200px;
+}

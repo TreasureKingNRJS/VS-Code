@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+</head>
+<body>
+    <button id ="bt">Click</button>
+    <input type="text" id="in" >
+    <label for="" id="er" style="display: none;">Enter minimum 4 characters</label>
+    <input id="tx" type="text" >
+    <div style="width: 50%;height: 300px;background-color: aquamarine;" id="d">
+
+    </div>
+    <button id="b">HIDE</button>
+    <div style="width: 75%;height: 500px;background-color: red;" id="di">
+
+    </div>
+    <div>
+        <br>
+        <form  id="login">
+        <table class="table">
+            <tr class="fo">
+                <th name="em">Email</th>
+                <th name="ps">Password</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><strong><input class="sub" type="submit" value="Log In"></strong></td>
+            </tr>
+
+            </table>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        var i=0
+        var text
+        $(document).ready(function(){
+            $("#bt").click(function(){
+                //alert("Hacked")
+                //$("#d").toggle(750)
+                $("#d").fadeToggle(2000)
+            })
+            $("#bt").mouseenter(function(){
+                $(this).css({"background-color":"red"})
+            })
+            $("#b").click(function(){
+                if(i==0){
+                    $("#di").fadeIn(1500)
+                document.getElementById("b").innerHTML = "HIDE"
+                i=1
+                }else{
+                    document.getElementById("b").innerHTML = "SHOW"
+                    $("#di").toggle(2000)
+                    i=0
+                }
+            })
+            $("#in").blur(function(){
+                text = $(this).val()
+                if(text.length<4){
+                    alert("Minimum number of characters should be 4")
+                    $("#er").show(2000)
+                }else{
+                    $("#er").hide(2000)
+                }
+            })
+
+            $("#login").validate({
+                rules:{
+                    em:{
+                        required : true,
+                        email : true
+                    },
+                    ps:{
+                        required : true,
+                        minlength: 4 ,
+                        maxlength : 8
+                    }
+                
+                },
+                messages:{
+                    em:{
+                        required : "Email required",
+                        email : "Invalid email"
+                    },
+                    ps:{
+                        required : "Password is essential",
+                        minlength: "Atleast 4 letters required",
+                        maxlength: "8 letters is enough"
+
+                    }
+                }
+            });
+            
+        })
+    </script>
+</body>
+</html>

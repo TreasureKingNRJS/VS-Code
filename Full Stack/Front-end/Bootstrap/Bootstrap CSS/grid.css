@@ -1,0 +1,26 @@
+.container{
+    border: solid  ;
+    height: 2300px;
+}
+.row{
+    border: 10px dotted rgb(0, 4, 255);
+    border-radius: 10px;
+}
+.cr17{
+    background-color: cadetblue;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.y{
+    top:560px;
+}
+.bn{
+    right: 200px; 
+}
+.cr7{
+    height: 300px;
+    width: 550px;
+}
+.r{
+    width: 100px;
+}

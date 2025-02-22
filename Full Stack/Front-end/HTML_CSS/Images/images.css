@@ -1,0 +1,24 @@
+body{
+   background-image: url('https://img.freepik.com/free-vector/realistic-golden-crown-set-king-queen_1017-33678.jpg?w=900&t=st=1681314390~exp=1681314990~hmac=83c49cbaa8fa30928d8a8c2b31195d1fab9e041027a9afde98526a086bb92021');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+}
+h1{
+    color: rgb(200, 70, 5);
+    background-image: url('https://www.adorama.com/alc/wp-content/uploads/2018/11/landscape-photography-tips-yosemite-valley-feature-825x465.jpg');
+    border: 3mm solid orange;
+    text-align: center;
+    font-size: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+img{
+    border: 5mm solid burlywood;
+}
+body,h1,img{
+    border-radius: 20mm;
+}
+
